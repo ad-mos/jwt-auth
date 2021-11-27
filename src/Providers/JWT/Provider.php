@@ -42,7 +42,6 @@ abstract class Provider
      * @param  string  $secret
      * @param  string  $algo
      * @param  array  $keys
-     *
      * @return void
      */
     public function __construct($secret, $algo, array $keys)
@@ -56,7 +55,6 @@ abstract class Provider
      * Set the algorithm used to sign the token.
      *
      * @param  string  $algo
-     *
      * @return $this
      */
     public function setAlgo($algo)
@@ -80,7 +78,6 @@ abstract class Provider
      * Set the secret used to sign the token.
      *
      * @param  string  $secret
-     *
      * @return $this
      */
     public function setSecret($secret)
@@ -104,7 +101,6 @@ abstract class Provider
      * Set the keys used to sign the token.
      *
      * @param  array  $keys
-     *
      * @return $this
      */
     public function setKeys(array $keys)
@@ -182,9 +178,9 @@ abstract class Provider
      * Determine if the algorithm is asymmetric, and thus
      * requires a public/private key combo.
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
-     *
      * @return bool
+     *
+     * @throws \Tymon\JWTAuth\Exceptions\JWTException
      */
     abstract protected function isAsymmetric();
 }
