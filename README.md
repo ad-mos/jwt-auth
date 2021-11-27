@@ -1,5 +1,7 @@
 # JWT Auth for Laravel Framework
 
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/ad-mos/laravel-jwt-auth)
+[![StyleCI](https://github.styleci.io/repos/432395607/shield?branch=develop)](https://github.styleci.io/repos/432395607)
 [![Latest Stable Version](https://img.shields.io/packagist/v/ad-mos/laravel-jwt-auth.svg)](https://packagist.org/packages/ad-mos/laravel-jwt-auth)
 [![License](https://img.shields.io/github/license/ad-mos/laravel-jwt-auth.svg)](https://packagist.org/packages/ad-mos/laravel-jwt-auth)
 
@@ -11,7 +13,6 @@ $ composer require ad-mos/laravel-jwt-auth
 ## Documentation
 
 Documentation for `1.*` [here](http://jwt-auth.com)
-For version `0.5.*` See the [WIKI](https://github.com/tymondesigns/jwt-auth/wiki) for documentation.
 
 ## License
 
