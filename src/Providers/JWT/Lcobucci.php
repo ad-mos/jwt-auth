@@ -56,7 +56,6 @@ class Lcobucci extends Provider implements JWT
      * @param  string  $secret
      * @param  string  $algo
      * @param  array  $keys
-     *
      * @return void
      */
     public function __construct(
@@ -94,10 +93,9 @@ class Lcobucci extends Provider implements JWT
      * Create a JSON Web Token.
      *
      * @param  array  $payload
+     * @return string
      *
      * @throws \Tymon\JWTAuth\Exceptions\JWTException
-     *
-     * @return string
      */
     public function encode(array $payload)
     {
@@ -120,10 +118,9 @@ class Lcobucci extends Provider implements JWT
      * Decode a JSON Web Token.
      *
      * @param  string  $token
+     * @return array
      *
      * @throws \Tymon\JWTAuth\Exceptions\JWTException
-     *
-     * @return array
      */
     public function decode($token)
     {
@@ -145,9 +142,9 @@ class Lcobucci extends Provider implements JWT
     /**
      * Get the signer instance.
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
-     *
      * @return \Lcobucci\JWT\Signer
+     *
+     * @throws \Tymon\JWTAuth\Exceptions\JWTException
      */
     protected function getSigner()
     {

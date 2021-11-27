@@ -350,7 +350,6 @@ abstract class AbstractServiceProvider extends ServiceProvider
      *
      * @param  string  $key
      * @param  string  $default
-     *
      * @return mixed
      */
     protected function config($key, $default = null)
@@ -362,7 +361,6 @@ abstract class AbstractServiceProvider extends ServiceProvider
      * Get an instantiable configuration instance.
      *
      * @param  string  $key
-     *
      * @return mixed
      */
     protected function getConfigInstance($key)
