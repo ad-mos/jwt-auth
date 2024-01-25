@@ -133,6 +133,7 @@ abstract class Claim implements Arrayable, ClaimContract, Jsonable, JsonSerializ
         return $strict ? $this->value === $value : $this->value == $value;
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Convert the object into something JSON serializable.
      *

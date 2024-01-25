@@ -155,6 +155,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
         return $this->claims->toPlainArray();
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Convert the object into something JSON serializable.
      *
@@ -186,6 +187,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
         return $this->toJson();
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Determine if an item exists at an offset.
      *
@@ -197,6 +199,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
         return Arr::has($this->toArray(), $key);
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Get an item at a given offset.
      *
@@ -208,6 +211,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
         return Arr::get($this->toArray(), $key);
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Don't allow changing the payload as it should be immutable.
      *
@@ -221,6 +225,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
         throw new PayloadException('The payload is immutable');
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Don't allow changing the payload as it should be immutable.
      *
@@ -234,6 +239,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
         throw new PayloadException('The payload is immutable');
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Count the number of claims.
      *
